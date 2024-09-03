@@ -13,7 +13,7 @@ export const AddTask = ({onAdd}) => {
         setError("")
 
         axios
-        .post("http://localhost:3006/tasks", {text, status:"unstarted"})
+        .post("http://localhost:3007/tasks", {text, status:"unstarted"})
         .then(response=> {
             onAdd(response.data);
             setText("");

@@ -16,15 +16,11 @@ const DashBoard = () => {
       setTasks(tasks.filter(x=> x.id != id))
     }
 
-    const countStatus = tasks =>{
-      tasks.map(task=>{
-        
-      })
-    }
+   
 
     useEffect(()=>{
         axios
-       .get("http://localhost:3006/tasks")
+       .get("http://localhost:3007/tasks")
        .then(response => {
         setTasks(response.data)
        })

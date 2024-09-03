@@ -5,7 +5,7 @@ const Task = ({task,onDel}) => {
 
   const handleDelete = ()=>{
     axios
-    .delete("http://localhost:3006/tasks/" + task.id, task.status)
+    .delete("http://localhost:3007/tasks/" + task.id, task.status)
     .then(response=>{
       onDel(response.data.id)
     })
@@ -16,7 +16,7 @@ const Task = ({task,onDel}) => {
     setSelectedStatus(newStatus);
 
     axios
-    .patch('http://localhost:3006/tasks/' + task.id, { status: newStatus})
+    .patch('http://localhost:3007/tasks/' + task.id, { status: newStatus})
     .then(response => {
       console.log('Success:', response.data);
     })
