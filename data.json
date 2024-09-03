@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "id": "101",
+      "text": "JavaScript",
+      "status": "unstarted"
+    },
+    {
+      "id": "102",
+      "text": "React.js",
+      "status": "unstarted"
+    },
+    {
+      "id": "103",
+      "text": "TypeScript",
+      "status": "in progress"
+    },
+    {
+      "id": "0ef3",
+      "text": "Next.js",
+      "status": "in progress"
+    },
+    {
+      "id": "d4da",
+      "text": "OOP",
+      "status": "in progress"
+    }
+  ]
+}
